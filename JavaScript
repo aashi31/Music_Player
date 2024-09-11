@@ -1,0 +1,9 @@
+function playSong(audioId) {
+    // Pause all audio elements to prevent multiple songs from playing
+    const allAudio = document.querySelectorAll('audio');
+    allAudio.forEach(audio => audio.pause());
+
+    // Play the selected audio
+    const audioElement = document.getElementById(audioId);
+    audioElement.play();
+}
